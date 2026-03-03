@@ -1,0 +1,32 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1c3d;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #42389e, #0f1026);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .font-satoshi {
+    font-family: 'Satoshi', 'DM Sans', sans-serif;
+  }
+}
