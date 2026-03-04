@@ -2,10 +2,10 @@
   <nav class="w-full bg-[#42389E] sticky top-0 z-50 shadow-lg">
 
     <!-- Main bar — fixed height so opening menu never causes a layout shift -->
-    <div class="w-full max-w-[1680px] grid grid-cols-[1fr_auto_1fr] items-center mx-auto px-6 md:px-[80px] lg:px-[120px] h-[52px]">
+    <div class="w-full max-w-[1680px] grid grid-cols-[1fr_auto_1fr] items-center mx-auto px-6 md:px-[80px] lg:px-[120px] h-[70px]">
 
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2 shrink-0">
+      <a href="/" class="flex items-center gap-1 shrink-0">
         <div class="w-7 h-7 flex items-center justify-center">
           <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
             <path d="M14.5 4.5V48.3092M32.5 55.3V31.5312V13.8211H4.5H59" stroke="white" stroke-width="9" stroke-linecap="round"/>

@@ -4,17 +4,15 @@
     <main>
       <div class="relative">
         <HeroSection />
-        
       </div>
-      <--TrustedBy />
-      <--WhatIsSection />
-      <--OpenFeatureSection />
-      <--ControlSection />
-      <--ComparisonTable />
-      <--DartCodeAISection />
-      <--PricingSection />
-      <--WhyTeamsSection />
-      <--CTABannerAndFooter />
+      <WhatIsSection />
+      <OpenFeatureSection />
+      <ControlSection />
+      <ComparisonTable />
+      <DartCodeAISection />
+      <PricingSection />
+      <WhyTeamsSection />
+      <CTABannerAndFooter />
     </main>
   </div>
 </template>
