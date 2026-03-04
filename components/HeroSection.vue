@@ -1,15 +1,16 @@
 <template>
-  <section
-    class="w-full relative overflow-hidden"
-    style="background: linear-gradient(160deg, #42389e 0%, #2d2475 35%, #1a1245 65%, #0f1026 100%); min-height: 600px;"
-  >
-    <!-- Background vector overlay -->
-    <div
-      class="absolute inset-0 opacity-20"
-      style="background: radial-gradient(ellipse 120% 80% at 50% 0%, #7b6fd0 0%, transparent 70%);"
-    />
+  <!-- Hero wrapper — the angled background is pure CSS, no SVG -->
+  <div class="hero-wrapper relative w-full overflow-hidden">
 
-    <div class="relative z-10 max-w-[1680px] mx-auto px-6 lg:px-[48px] pt-12 pb-0 flex flex-col items-center text-center">
+    <!-- Layer 1: #EDECF6 diagonal slab (bottom shape) -->
+    <div class="hero-slab-light" />
+
+    <!-- Layer 2: Main gradient block (clipped diagonally at the bottom) -->
+    <div class="hero-gradient-block" />
+
+    <!-- Content sits above both layers -->
+    <div class="relative z-10 max-w-[1680px] mx-auto px-6 lg:px-[48px] pt-32 lg:pt-40 pb-0 flex flex-col items-center text-center">
+
       <!-- Headline -->
       <div class="relative max-w-[900px]">
         <h1 class="font-satoshi font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight text-white mb-3">
@@ -39,46 +40,97 @@
         </p>
       </div>
 
-      <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-[32px]">
-        <div class="flex flex-col sm:flex-row items-center gap-[32px]">
-          <div>
-            <p class="text-[14px] font-medium text-text-light mb-2 text-left">Valid till 15th September,2025</p>
-            <a
-              href="#"
-              class="inline-flex items-center justify-center font-bold text-[18px] rounded-[8px] w-[260px] h-[43px] shadow-lg hover:-translate-y-1 transition-all duration-300 bg-[#F9A71E]"
-            >
-              <span class="bg-text-gradient bg-clip-text text-transparent">Get Access</span>
-            </a>
-          </div>
-          <div>
-            <p class="text-[14px] font-medium text-transparent mb-2 hidden md:block select-none">Spacer</p>
-            <a
-              href="#"
-              class="inline-flex items-center justify-center border border-[#F9A71E] font-bold text-[18px] rounded-[8px] w-[260px] h-[43px] shadow-lg hover:-translate-y-1 hover:bg-white/5 transition-all duration-300 text-[#F9A71E]"
-            >
-              Join AI Early Access
-            </a>
-          </div>
+      <!-- CTA Group -->
+      <div class="mt-6 flex flex-col items-center gap-[4px]">
+        <p class="text-[14px] font-medium text-text-light">Valid till 15th September,2025</p>
+        <div class="flex flex-col sm:flex-row items-center gap-[20px]">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center font-semibold text-[16px] px-[32px] py-[11px] rounded-[8px] w-[200px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.05)] hover:bg-yellow-400 transition-colors bg-accent"
+            style="color: #1a1245;"
+          >
+            Get Access
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center border border-accent font-semibold text-[16px] px-[32px] py-[11px] rounded-[8px] w-[220px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.05)] hover:bg-white/10 transition-colors text-accent"
+          >
+            Join AI Early Access
+          </a>
         </div>
       </div>
 
       <!-- Dashboard Preview -->
-      <div class="mt-16 w-full max-w-[1394px] relative group perspective-1000">
-        <!-- Blurred container -->
-        <div
-          class="rounded-2xl overflow-hidden border border-white/20 shadow-2xl transition-transform duration-700 transform group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
-          style="background: rgba(255,255,255,0.55); backdrop-filter: blur(8px);"
-        >
-          <div class="m-4 md:m-6 rounded-lg overflow-hidden border border-gray-400 bg-[#0F1026]">
-            <img
-              src="~/assets/images/dashboard-hero.png"
-              alt="IntelliToggle Dashboard"
-              class="w-full h-auto block transform transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
-            />
-          </div>
+      <div class="mt-16 w-full max-w-[1394px] relative">
+        <div class="dashboard-card relative">
+          <img
+            src="/pngs/outer.png"
+            alt="IntelliToggle App Preview"
+            class="dashboard-preview-img"
+          />
+          <!-- Overlay inner app screenshot -->
+          <img
+            src="/pngs/app.intellitoggle.com 1.png"
+            alt="IntelliToggle App Screenshot"
+            class="dashboard-overlay-img"
+          />
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
 </template>
+
+<style scoped>
+/* ── Hero wrapper ── */
+.hero-wrapper {
+  min-height: 600px;
+}
+
+/* ── Layer 1: Light #EDECF6 diagonal slab ── */
+.hero-slab-light {
+  position: absolute;
+  inset: 0;
+  background-color: #edecf6;
+  clip-path: polygon(0 0, 100% 0, 100% 37%, 0 70%);
+  z-index: 1;
+}
+
+/* ── Layer 2: Main gradient block, clipped diagonally ── */
+.hero-gradient-block {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #42389e 0%, #0f1026 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 32%, 0 65%);
+  z-index: 2;
+}
+
+/* ── Dashboard preview card ── */
+.dashboard-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-preview-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ── Overlay inner screenshot on top of dashboard ── */
+.dashboard-overlay-img {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  border-radius: 10px;
+  z-index: 2;
+}
+</style>
+
+<script setup>
+</script>

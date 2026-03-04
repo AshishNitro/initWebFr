@@ -4,14 +4,10 @@
     <div class="max-w-[1680px] mx-auto">
       <div
         class="relative rounded-[24px] overflow-hidden px-6 md:px-12 py-[80px] flex flex-col items-center text-center shadow-2xl"
-        style="background: linear-gradient(135deg, #42389e 0%, #2d2475 50%, #0f1026 100%);"
+        style="background: linear-gradient(135deg, #2d2475 0%, #42389e 50%, #1a1245 100%);"
       >
-        <!-- Background squares pattern (decorative) -->
-        <div class="absolute inset-0 opacity-10" aria-hidden="true">
-          <div class="grid grid-cols-8 grid-rows-4 gap-4 p-4 h-full">
-            <div v-for="i in 32" :key="i" class="rounded-lg border border-white/30" />
-          </div>
-        </div>
+        <!-- Circuit board background pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><path d=%22M10 10h40M10 30h40M30 10v40M10 10v40%22 stroke=%22white%22 stroke-width=%221%22 fill=%22none%22/></svg>'); background-size: 60px 60px;"/>
 
         <div class="relative z-10 flex flex-col items-center gap-6 max-w-[800px]">
           <h2 class="font-satoshi font-bold text-3xl md:text-5xl lg:text-[56px] text-white leading-tight">
@@ -45,11 +41,11 @@
     <div class="max-w-[1680px] mx-auto flex flex-col lg:flex-row lg:justify-between gap-12 lg:gap-20">
       <!-- Brand Column -->
       <div class="flex flex-col gap-[8px] w-full lg:w-[300px]">
-        <a href="/" class="flex items-center gap-2">
+        <a href="/" class="flex items-center gap-0">
           <div class="w-[40px] h-[37px] flex items-center justify-center">
-            <img src="~/assets/images/logo-icon.svg" alt="IntelliToggle" class="w-full h-full object-contain" />
+            <img src="~/assets/images/logo-icon.png" alt="IntelliToggle" class="w-full h-full object-contain" />
           </div>
-          <span class="font-merriweather-sans font-bold text-[16px] bg-clip-text bg-gradient-to-b from-[#42389e] to-[#0f1026] text-transparent">IntelliToggle</span>
+          <span class="font-merriweather-sans font-bold text-[16px] bg-clip-text bg-gradient-to-b from-[#42389e] to-[#0f1026] text-transparent -ml-1">IntelliToggle</span>
         </a>
         <p class="text-[16px] leading-relaxed max-w-[280px] opacity-90" style="color: #4a4b4d;">
           IntelliToggle is built by AORTEM, a company focused on powering scalable, multi-platform developer tools.
@@ -61,7 +57,7 @@
             class="w-[24px] h-[24px] rounded-full flex items-center justify-center"
             aria-label="GitHub"
           >
-            <img src="~/assets/images/github-icon.svg" alt="GitHub" class="w-full h-full" />
+             <img src="~/assets/images/github-icon.svg" alt="GitHub" class="w-full h-full" />
           </a>
         </div>
       </div>
@@ -109,9 +105,9 @@
           />
           <button
             type="submit"
-            class="inline-flex items-center justify-center bg-accent text-gradient font-bold text-[12px] px-[32px] py-[9px] rounded-r-[7px] hover:bg-yellow-400 transition-colors whitespace-nowrap border-0"
+            class="inline-flex items-center justify-center bg-[#F9A71E] font-bold text-[12px] px-[32px] py-[9px] rounded-r-[7px] hover:bg-yellow-400 transition-colors whitespace-nowrap border-0"
           >
-            Subscribe
+            <span class="bg-gradient-to-b from-[#42389E] to-[#0F1026] bg-clip-text text-transparent">Subscribe</span>
           </button>
         </form>
       </div>

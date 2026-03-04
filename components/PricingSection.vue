@@ -1,5 +1,5 @@
 <template>
-  <section id="pricing" class="w-full py-16 lg:py-[120px] px-6 lg:px-[120px] bg-white">
+  <section id="pricing" class="w-full py-16 lg:py-[120px] px-6 lg:px-[120px] bg-[#EDECF6]">
     <div class="max-w-[1680px] mx-auto flex flex-col items-center">
       <!-- Title -->
       <h2 class="font-satoshi font-bold text-3xl md:text-4xl lg:text-[48px] text-center mb-[48px] text-[#0E121B]">
@@ -41,7 +41,7 @@
         <div class="flex flex-col sm:flex-row gap-[20px] shrink-0">
           <a
             href="#"
-            class="inline-flex items-center justify-center bg-accent text-gradient font-semibold text-[16px] px-5 py-[12px] rounded-[8px] hover:bg-yellow-400 transition-colors shadow-[0px_0px_10px_0px_rgba(0,0,0,0.05)] w-[160px]"
+            class="inline-flex items-center justify-center bg-[#F9A71E] text-[#1a1c3d] font-semibold text-[16px] px-5 py-[12px] rounded-[8px] hover:brightness-110 transition-colors shadow-[0px_0px_10px_0px_rgba(0,0,0,0.05)] w-[160px]"
           >
             Get Started
           </a>
