@@ -200,18 +200,18 @@
                     <div class="dash-page-header">
                       <div style="display:flex;align-items:center;gap:3px;">
                         <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1" stroke="#1e1b4b" stroke-width="1.5" fill="none"/></svg>
-                        <span style="font-size:7px;font-weight:700;color:#1e1b4b;">enable-new-ui details</span>
+                        <span style="font-size:7px;font-weight:700;color:#1e1b4b;">mobile-menu-toggle details</span>
                       </div>
                       <div style="font-size:4.5px;color:#94a3b8;margin-top:2px;">
                         <span style="color:#7c3aed;">⚑ Flag List</span>
                         <span style="margin:0 2px;">/</span>
-                        <span>⚑ enable-new-ui</span>
+                        <span>⚑ mobile-menu-toggle</span>
                       </div>
                     </div>
 
                     <!-- Flag name + toggle -->
                     <div class="dash-flag-header">
-                      <span style="font-size:8px;font-weight:700;color:#1e1b4b;">Enable-New-Ui</span>
+                      <span style="font-size:8px;font-weight:700;color:#1e1b4b;">Mobile-Menu-Toggle</span>
                       <div style="display:flex;align-items:center;gap:4px;">
                         <div class="dash-toggle-on">
                           <div class="dash-toggle-dot"></div>
@@ -255,7 +255,7 @@
                     <div class="dash-action-row">
                       <div>
                         <div style="font-size:5.5px;font-weight:700;color:#1e1b4b;">Kill</div>
-                        <div style="font-size:4px;color:#64748b;margin-top:1px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div style="font-size:4px;color:#64748b;margin-top:1px;">Permanently disable this flag and revert to the default navigation across all platforms.</div>
                       </div>
                       <div class="dash-btn-danger">Kill Flag</div>
                     </div>
@@ -283,12 +283,12 @@
                   <div class="dash-right-panel">
                     <div class="dash-info-row" style="display:flex;align-items:center;justify-content:space-between;">
                       <span class="dash-info-label" style="margin-bottom:0;">Key</span>
-                      <span class="dash-info-value"><span style="color:#000;">⚑</span> enable-new-ui</span>
+                      <span class="dash-info-value"><span style="color:#000;">⚑</span> mobile-menu-toggle</span>
                     </div>
 
                     <div class="dash-info-row">
                       <span class="dash-info-label">Description</span>
-                      <span class="dash-info-value">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                      <span class="dash-info-value">Toggles the responsive hamburger menu on mobile viewports for smoother navigation.</span>
                     </div>
 
                     <div class="dash-info-row">

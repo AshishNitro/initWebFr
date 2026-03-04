@@ -1,42 +1,27 @@
-# IntelliToggle Website Implementation
+# IntelliToggle Website
 
-This project implements the IntelliToggle landing page, focusing on pixel-perfect fidelity with the provided Figma design.
+Frontend implementation for the assignment using **Nuxt 3 + Tailwind CSS**.
 
-## Tech Stack
+## Hosted URL
 
-- **Framework**: Nuxt 3 (Vue 3)
-- **Styling**: Tailwind CSS
-- **Fonts**: Satoshi (Primary), DM Sans, Merriweather Sans (Secondary)
-- **Icons**: Pre-exported SVGs and inline SVGs
+- **Live Demo:** https://init-web-fr.vercel.app/
 
-## Rationale
+## Notes (Tradeoffs / Shortcuts / With More Time)
 
-Nuxt 3 was chosen for its excellent performance, SEO capabilities, and integrated developer experience. Tailwind CSS was utilized to rapidly match the precise spacing, typography, gradients, and utility classes defined in the Figma handoff. The project heavily references the exact hex codes, padding schemas, and asset dimensions provided in the Figma Dev Mode.
+- Focus was placed on matching layout and styling quickly across sections.
+- Some components use fixed spacing values for faster visual alignment.
+- With more time, I would:
+  - Refactor repeated styles into reusable UI primitives.
+  - Improve accessibility (keyboard states, semantic landmarks, form labeling).
+  - Add stronger responsive fine-tuning for edge device sizes.
+  - Add automated visual regression checks.
 
-## Setup Instructions
+## Pixelay Evidence
 
-1. Install dependencies:
+A `/pixelay` (or `/docs`) folder is expected to contain:
 
-```bash
-npm install
-```
+- `pixelay-desktop.png`
+- `pixelay-mobile.png`
+- `notes.md`
 
-2. Start the development server:
-
-```bash
-npm run dev
-```
-
-3. Open `http://localhost:3000` in your browser.
-
-## Pixelay Evidence & Review Guide
-
-To evaluate the fidelity of this implementation against the Figma design using Pixelay or similar overlay tools:
-
-1. **Resolution Settings**: Ensure your viewport width is set to `1920px` to match the desktop frame in Figma, or evaluate the max-width container (`1680px` max-width content centered) directly.
-2. **Typography**: The layout uses precise font scaling exactly from Figma layout calculations.
-3. **Spacing**: Padding, margins, and gaps have been translated to exact pixel constraints using Tailwind's arbitrary values (e.g., `lg:px-[120px]`, `py-[120px]`).
-4. **Colors & Shadows**: Custom gradients (e.g., hero background, pricing card) and exact hex codes have been matched across text and borders.
-5. **Interactive states**: Buttons include nuanced hover states mapping to the high-fidelity design goals (+ scale/shadow transitions).
-
-_Note for reviewers: Please use an overlay extension like Pixelay and align the baseline to the top of the Navigation Bar._
+> Note: Pixelay plugin was not working on my system at the current time, so overlay screenshots could not be generated in this submission.
