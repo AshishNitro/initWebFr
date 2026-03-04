@@ -21,50 +21,184 @@
             >
               <div class="rounded-[4px] overflow-hidden bg-slate-900 w-full h-[180px] lg:h-[220px] relative">
                 
+                <!-- SVGs -->
+                <div v-if="index === 0" class="absolute inset-0 w-full h-full">
+                  <img src="./logoforty/connect1.svg" class="w-full h-full object-cover object-left-top" />
+                </div>
+                <div v-else-if="index === 1" class="absolute inset-0 w-full h-full">
+                  <img src="./logoforty/createflags.svg" class="w-full h-full object-cover object-left-top" />
+                </div>
+                <div v-else class="absolute inset-0 w-full h-full">
+                  <img src="./logoforty/ship.svg" class="w-full h-full object-cover object-left-top" />
+                </div>
+
+                <!-- EXISTING CODE COMMENTED FOR LATER -->
+                <template v-if="false">
                 <!-- Card 1: Connect Mockup -->
-                <div v-if="index === 0" class="absolute inset-0 flex select-none w-full h-full bg-slate-900">
-                  <!-- Sidebar -->
-                  <div class="w-[20%] bg-slate-950 border-r border-slate-800 flex flex-col items-center py-4 gap-3">
-                    <div class="w-5 h-5 bg-blue-500 rounded-md shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
-                    <div class="w-4 h-4 bg-slate-800 rounded-md"></div>
-                    <div class="w-4 h-4 bg-slate-800 rounded-md"></div>
-                    <div class="w-4 h-4 bg-slate-800 rounded-md"></div>
+                <div v-if="index === 0" class="absolute inset-0 flex flex-col select-none w-full h-full bg-[#f5f6fa]">
+                  <!-- Top Navbar -->
+                  <div class="h-[22px] bg-[#1e1b4b] flex items-center justify-between px-2 shrink-0">
+                    <div class="flex items-center gap-1.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" fill="white" opacity="0.9"/></svg>
+                      <span class="text-white text-[6px] font-bold">IntelliToggle</span>
+                    </div>
+                    <div class="flex items-center gap-1 bg-white/10 rounded px-1.5 py-0.5 min-w-[60px]">
+                      <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="#94a3b8" stroke-width="1.5"/><line x1="11" y1="11" x2="14" y2="14" stroke="#94a3b8" stroke-width="1.5"/></svg>
+                      <span class="text-[5px] text-slate-400">Search...</span>
+                    </div>
                   </div>
-                  <!-- Settings Menu -->
-                  <div class="w-[30%] bg-slate-900 border-r border-slate-800 p-3 flex flex-col gap-2">
-                    <div class="h-2.5 w-16 bg-slate-700/50 rounded mb-2"></div>
-                    <div class="px-2 py-1.5 bg-blue-600 rounded-md text-white text-[8px] font-medium shadow-sm">OAuth2</div>
-                    <div class="px-2 py-1.5 text-slate-400 text-[8px] hover:bg-slate-800/50 rounded-md transition-colors">General</div>
-                    <div class="px-2 py-1.5 text-slate-400 text-[8px] hover:bg-slate-800/50 rounded-md transition-colors">Password</div>
-                    <div class="px-2 py-1.5 text-slate-400 text-[8px] hover:bg-slate-800/50 rounded-md transition-colors">Usage</div>
-                  </div>
-                  <!-- Main Area -->
-                  <div class="flex-1 p-4 relative">
-                    <div class="h-3 w-24 bg-slate-800 rounded mb-4"></div>
-                    <div class="h-24 border border-slate-800 rounded-md bg-slate-900/50"></div>
+                  <!-- Body -->
+                  <div class="flex flex-1 min-h-0">
+                    <!-- Left Sidebar -->
+                    <div class="w-[52px] bg-white border-r border-slate-200 flex flex-col py-1.5 px-1 gap-[1px] shrink-0 overflow-hidden">
+                      <!-- Project -->
+                      <div class="flex items-center gap-1 px-1 py-1 mb-1">
+                        <div class="w-3 h-3 rounded bg-indigo-600 flex items-center justify-center"><span class="text-white text-[4px] font-bold">P</span></div>
+                        <span class="text-[5px] font-semibold text-slate-800 truncate">Project1</span>
+                      </div>
+                      <div class="text-[3.5px] font-bold text-slate-400 uppercase px-1 mb-0.5">Main Menu</div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" fill="#94a3b8"/><rect x="9" y="1" width="6" height="6" rx="1" fill="#94a3b8"/><rect x="1" y="9" width="6" height="6" rx="1" fill="#94a3b8"/><rect x="9" y="9" width="6" height="6" rx="1" fill="#94a3b8"/></svg>
+                        <span>Dashboard</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1" stroke="#94a3b8" stroke-width="1.5" fill="none"/></svg>
+                        <span>Feature Flags</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/></svg>
+                        <span>Experiments</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><polyline points="2,12 5,6 8,9 11,3 14,7" stroke="#94a3b8" stroke-width="1.5" fill="none"/></svg>
+                        <span>Analytics</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="1" stroke="#94a3b8" stroke-width="1.5" fill="none"/></svg>
+                        <span>Audit logs</span>
+                      </div>
+                      <div class="text-[3.5px] font-bold text-slate-400 uppercase px-1 mt-1 mb-0.5">Preferences</div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] bg-indigo-600 text-white font-medium">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5" fill="none"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2" stroke="white" stroke-width="1"/></svg>
+                        <span>Settings</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <svg width="6" height="6" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="4" stroke="#94a3b8" stroke-width="1.5" fill="none"/><path d="M4 14c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#94a3b8" stroke-width="1.5" fill="none"/></svg>
+                        <span>Support / Docs</span>
+                      </div>
+                    </div>
+                    <!-- Settings Sub-Menu -->
+                    <div class="w-[55px] bg-white border-r border-slate-200 flex flex-col py-2 px-1.5 gap-[1px] shrink-0 overflow-hidden">
+                      <div class="text-[6px] font-bold text-slate-800 mb-0.5 px-0.5">Settings</div>
+                      <div class="text-[4px] text-slate-400 mb-1.5 px-0.5 leading-tight">Manage your personal information, team, plan and...</div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">⚙️</span><span>General</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">🔒</span><span>Password</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">💳</span><span>Subscription</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">🔔</span><span>Notifications</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">📂</span><span>Linked Repos</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">✉️</span><span>Email & Msgs</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] bg-indigo-50 text-indigo-700 font-medium">
+                        <span class="text-[6px]">🔑</span><span>OAuth2</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">👁️</span><span>Transparency</span>
+                      </div>
+                      <div class="flex items-center gap-1 px-1 py-[2px] rounded text-[5px] text-slate-500">
+                        <span class="text-[6px]">🔐</span><span>Login & Pass</span>
+                      </div>
+                    </div>
+                    <!-- Main Content Area -->
+                    <div class="flex-1 p-3 relative overflow-hidden bg-[#f5f6fa]">
+                      <div class="text-[7px] font-bold text-slate-800 mb-0.5">Settings</div>
+                      <div class="text-[4px] text-slate-400 mb-2">Manage your personal information, team, plan and...</div>
+                      <div class="flex items-center gap-1 mb-2">
+                        <svg width="7" height="7" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="#6366f1"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none"/></svg>
+                        <span class="text-[6px] font-semibold text-indigo-700">OAuth2 Clients</span>
+                      </div>
+                      <div class="border border-slate-200 rounded bg-white p-2 h-[60px] flex items-center justify-center">
+                        <span class="text-[4px] text-slate-300">No clients yet</span>
+                      </div>
+                    </div>
                   </div>
                   <!-- Overlay Modal -->
-                  <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm flex flex-col items-center justify-center p-4">
-                    <div class="bg-white rounded-lg shadow-2xl w-[85%] p-4 flex flex-col gap-3 transform hover:scale-[1.02] transition-transform duration-300">
-                      <div class="font-bold text-slate-900 text-[12px] flex items-center gap-2">
-                        Create OAuth2 Client
+                  <div class="absolute inset-0 bg-slate-950/50 backdrop-blur-[1px] flex items-center justify-end p-2">
+                    <div class="bg-white rounded-lg shadow-2xl w-[55%] h-[92%] flex flex-col overflow-hidden mr-1">
+                      <!-- Modal Header -->
+                      <div class="flex items-center justify-between px-3 py-2 border-b border-slate-100">
+                        <span class="text-[8px] font-bold text-slate-900">Create OAuth2 Client</span>
+                        <div class="w-3 h-3 flex items-center justify-center text-slate-400 cursor-pointer hover:text-slate-600 text-[8px]">✕</div>
                       </div>
-                      <div class="flex flex-col gap-1.5">
-                        <div class="text-[8px] font-medium text-slate-500 uppercase tracking-wide">Client Name</div>
-                        <div class="h-6 border border-slate-200 rounded-md w-full bg-slate-50/50 flex items-center px-2">
-                          <div class="w-20 h-1.5 bg-slate-300 rounded-sm"></div>
+                      <!-- Modal Body -->
+                      <div class="flex-1 px-3 py-2 flex flex-col gap-2 overflow-y-auto">
+                        <!-- Client Name -->
+                        <div class="flex flex-col gap-0.5">
+                          <div class="text-[5px] font-semibold text-slate-600">Client Name <span class="text-red-400">*</span></div>
+                          <div class="h-[14px] border border-slate-200 rounded px-1.5 flex items-center bg-white">
+                            <span class="text-[5px] text-slate-400">P Client</span>
+                          </div>
+                        </div>
+                        <!-- Project Name -->
+                        <div class="flex flex-col gap-0.5">
+                          <div class="text-[5px] font-semibold text-slate-600">Project Name</div>
+                          <div class="h-[14px] border border-slate-200 rounded px-1.5 flex items-center justify-between bg-white">
+                            <span class="text-[5px] text-slate-700 font-medium">Project 1</span>
+                            <svg width="5" height="5" viewBox="0 0 12 12" fill="none"><path d="M3 5l3 3 3-3" stroke="#94a3b8" stroke-width="1.2"/></svg>
+                          </div>
+                        </div>
+                        <!-- Government visibility -->
+                        <div class="flex flex-col gap-0.5">
+                          <div class="text-[5px] font-semibold text-slate-600">Government visibility</div>
+                          <div class="flex gap-0">
+                            <div class="px-2 py-[3px] bg-indigo-600 text-white text-[5px] font-medium rounded-l border border-indigo-600">Production</div>
+                            <div class="px-2 py-[3px] bg-white text-slate-600 text-[5px] font-medium rounded-r border border-slate-200 border-l-0">Staging</div>
+                          </div>
+                        </div>
+                        <!-- Scope -->
+                        <div class="flex flex-col gap-1">
+                          <div class="text-[5px] font-semibold text-slate-600">Scope</div>
+                          <div class="flex items-center gap-1">
+                            <div class="w-[7px] h-[7px] border border-indigo-500 rounded-sm bg-indigo-500 flex items-center justify-center">
+                              <svg width="5" height="5" viewBox="0 0 12 12" fill="none"><path d="M2.5 6l2.5 2.5 5-5" stroke="white" stroke-width="1.5"/></svg>
+                            </div>
+                            <span class="text-[5px] text-slate-700 font-medium">Root</span>
+                          </div>
+                          <div class="flex items-center gap-1 pl-2">
+                            <div class="w-[7px] h-[7px] border border-slate-300 rounded-sm bg-white"></div>
+                            <span class="text-[5px] text-slate-500">More</span>
+                          </div>
+                          <div class="flex items-center gap-1 pl-2">
+                            <div class="w-[7px] h-[7px] border border-slate-300 rounded-sm bg-white"></div>
+                            <span class="text-[5px] text-slate-500">Evaluate</span>
+                          </div>
+                        </div>
+                        <!-- Date -->
+                        <div class="flex flex-col gap-0.5">
+                          <div class="text-[5px] font-semibold text-slate-600">Date</div>
+                          <div class="h-[14px] border border-slate-200 rounded px-1.5 flex items-center justify-between bg-white">
+                            <div class="flex items-center gap-1">
+                              <span class="text-[5px]">📅</span>
+                              <span class="text-[5px] text-slate-700">12/03/25</span>
+                            </div>
+                            <svg width="5" height="5" viewBox="0 0 12 12" fill="none"><path d="M3 5l3 3 3-3" stroke="#94a3b8" stroke-width="1.2"/></svg>
+                          </div>
                         </div>
                       </div>
-                      <div class="flex flex-col gap-1.5">
-                        <div class="text-[8px] font-medium text-slate-500 uppercase tracking-wide">Project Name</div>
-                        <div class="h-6 border border-slate-200 rounded-md w-full bg-slate-50/50 flex items-center px-2 justify-between">
-                          <div class="w-16 h-1.5 bg-slate-300 rounded-sm"></div>
-                          <div class="w-2 h-2 border-r border-b border-slate-400 transform rotate-45 mb-1 mr-1"></div>
-                        </div>
-                      </div>
-                      <div class="flex gap-2 mt-2 justify-end">
-                        <div class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-md text-[8px] font-medium cursor-pointer hover:bg-slate-200 transition-colors">Cancel</div>
-                        <div class="px-3 py-1.5 bg-blue-600 text-white rounded-md text-[8px] font-medium shadow-sm shadow-blue-500/30 cursor-pointer hover:bg-blue-700 transition-colors">Create Client</div>
+                      <!-- Modal Footer -->
+                      <div class="flex gap-2 justify-end px-3 py-2 border-t border-slate-100">
+                        <div class="px-3 py-1 bg-slate-100 text-slate-600 rounded text-[6px] font-medium cursor-pointer hover:bg-slate-200 transition-colors">Cancel</div>
+                        <div class="px-3 py-1 bg-indigo-600 text-white rounded text-[6px] font-medium shadow-sm cursor-pointer hover:bg-indigo-700 transition-colors">Create Client</div>
                       </div>
                     </div>
                   </div>
@@ -177,6 +311,7 @@
                     Page 2 of 16
                   </div>
                 </div>
+                </template>
 
               </div>
             </div>

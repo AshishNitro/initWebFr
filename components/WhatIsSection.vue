@@ -40,7 +40,7 @@
 
     <!-- ── What Is IntelliToggle ── -->
     <div class="w-full py-[120px] px-6 lg:px-[120px]">
-      <div class="max-w-[1680px] mx-auto flex flex-col gap-[48px] items-center">
+      <div class="max-w-[1680px] mx-auto flex flex-col gap-[80px] items-center">
 
         <!-- Gradient title -->
         <div class="w-full px-0 lg:px-[100px]">
@@ -53,10 +53,10 @@
         </div>
 
         <!-- Two-column layout -->
-        <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-0">
+        <div class="w-full max-w-[1500px] mx-auto flex flex-col lg:flex-row items-center justify-center gap-[48px] lg:gap-[80px]">
 
           <!-- Left: Text -->
-          <div class="flex flex-col gap-[16px] items-start w-full lg:w-[623px] shrink-0">
+          <div class="flex flex-col gap-[16px] items-start w-full lg:w-[460px] shrink-0">
             <h3 class="font-semibold text-[32px] leading-normal text-[#0E121B]">
               Your AI Dart App's Control Panel For Feature Releases
             </h3>
@@ -87,8 +87,8 @@
               <div class="dash-topnav">
                 <div class="dash-topnav-left">
                   <div class="dash-logo">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                      <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" fill="white" opacity="0.9"/>
+                    <svg width="18" height="18" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5 4.5V48.3092M32.5 55.3V31.5312V13.8211H4.5H59" stroke="white" stroke-width="9" stroke-linecap="round"/>
                     </svg>
                     <span class="dash-logo-text">IntelliToggle</span>
                   </div>
@@ -101,20 +101,44 @@
                   </div>
                 </div>
                 <div class="dash-topnav-right">
-                  <div class="dash-upgrade-btn">Upgrade Now</div>
+                  <div class="dash-upgrade-btn">
+                    <svg width="10" height="10" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.02222 4.04438L3.03333 10.111H9.1L10.1111 4.04438M2.02222 4.04438L2.88987 4.7385C3.45404 5.18982 3.73612 5.4155 4.02046 5.45053C4.26956 5.48122 4.52117 5.41813 4.72636 5.27359C4.96056 5.10862 5.10287 4.77658 5.38745 4.11251L6.06666 2.52771M2.02222 4.04438C2.30143 4.04438 2.52777 3.81803 2.52777 3.53882C2.52777 3.25962 2.30143 3.03327 2.02222 3.03327C1.74301 3.03327 1.51666 3.25962 1.51666 3.53882C1.51666 3.81803 1.74301 4.04438 2.02222 4.04438ZM10.1111 4.04438L9.24347 4.73851C8.67927 5.18982 8.39722 5.4155 8.11285 5.45053C7.86376 5.48122 7.61215 5.41813 7.40694 5.27359C7.17277 5.10862 7.03045 4.77658 6.74588 4.11251L6.06666 2.52771M10.1111 4.04438C10.3903 4.04438 10.6167 3.81803 10.6167 3.53882C10.6167 3.25962 10.3903 3.03327 10.1111 3.03327C9.83189 3.03327 9.60555 3.25962 9.60555 3.53882C9.60555 3.81803 9.83189 4.04438 10.1111 4.04438ZM6.06666 2.52771C6.34588 2.52771 6.57222 2.30137 6.57222 2.02216C6.57222 1.74295 6.34588 1.5166 6.06666 1.5166C5.78744 1.5166 5.56111 1.74295 5.56111 2.02216C5.56111 2.30137 5.78744 2.52771 6.06666 2.52771ZM6.06666 2.02216H6.07172M10.1111 3.53882H10.1162M2.02222 3.53882H2.02727" stroke="#525866" stroke-width="1.01111" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Upgrade Now
+                  </div>
                   <div class="dash-notif">
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-                      <path d="M8 1a4 4 0 0 0-4 4v3l-1 2h10l-1-2V5a4 4 0 0 0-4-4z" fill="#f59e0b"/>
-                      <circle cx="8" cy="14" r="1.5" fill="#f59e0b"/>
+                    <svg width="16" height="16" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="20.2222" height="20.2222" rx="10.1111" fill="white" fill-opacity="0.15"/>
+                      <path d="M5.32346 11.5114C5.21595 12.2162 5.6966 12.7053 6.28509 12.9491C8.54127 13.8838 11.681 13.8838 13.9371 12.9491C14.5256 12.7053 15.0063 12.2162 14.8988 11.5114C14.8327 11.0783 14.506 10.7176 14.2639 10.3655C13.9469 9.89853 13.9154 9.38919 13.9154 8.84733C13.9154 6.75325 12.2122 5.05566 10.1111 5.05566C8.01009 5.05566 6.30687 6.75325 6.30687 8.84733C6.30682 9.38919 6.27532 9.89853 5.95828 10.3655C5.71624 10.7176 5.38953 11.0783 5.32346 11.5114Z" stroke="white" stroke-width="0.758333" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8.0889 13.6499C8.32069 14.5221 9.13818 15.1666 10.1111 15.1666C11.0841 15.1666 11.9015 14.5221 12.1333 13.6499" stroke="white" stroke-width="0.758333" stroke-linecap="round" stroke-linejoin="round"/>
+                      <g filter="url(#filter0_d_8252_1941)">
+                        <circle cx="13.6806" cy="4.80289" r="1.76944" fill="#FC5050"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_8252_1941" x="10.9" y="2.52789" width="5.56112" height="5.56104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset dy="0.505556"/>
+                          <feGaussianBlur stdDeviation="0.505556"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0784314 0 0 0 0.03 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8252_1941"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8252_1941" result="shape"/>
+                        </filter>
+                      </defs>
                     </svg>
                   </div>
-                  <div class="dash-avatar-nav" style="background:#7c3aed;">
-                    <span style="font-size:5px;color:white;font-weight:600;">SW</span>
+                  <div class="dash-avatar-nav">
+                    <img src="~/assets/images/avtartlogo.svg" alt="Avatar" class="w-full h-full rounded-full object-cover" />
                   </div>
                   <div class="dash-user-info">
                     <span style="font-size:5.5px;color:white;font-weight:600;">Sophia Williams</span>
                     <span style="font-size:4px;color:#a5b4fc;">sophia@devco.com</span>
                   </div>
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.05556 5.49992L6.93243 3.62305L7.46857 4.15919L5.05556 6.57221L2.64254 4.15919L3.17868 3.62305L5.05556 5.49992Z" fill="white"/>
+                  </svg>
                 </div>
               </div>
 
@@ -132,39 +156,39 @@
                   <div class="dash-menu-label">MAIN MENU</div>
 
                   <div class="dash-menu-item">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" fill="#64748b"/><rect x="9" y="1" width="6" height="6" rx="1" fill="#64748b"/><rect x="1" y="9" width="6" height="6" rx="1" fill="#64748b"/><rect x="9" y="9" width="6" height="6" rx="1" fill="#64748b"/></svg>
+                    <img src="~/assets/images/dashboard-browsing.svg" width="8" height="8" style="flex-shrink: 0;" />
                     <span>Dashboard</span>
                   </div>
 
                   <div class="dash-menu-item dash-menu-active">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1" fill="white"/></svg>
+                    <img src="~/assets/images/flag-02.svg" width="8" height="8" style="flex-shrink: 0; filter: brightness(0);" />
                     <span>Feature Flags</span>
                   </div>
 
                   <div class="dash-menu-item">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#64748b" stroke-width="1.5" fill="none"/></svg>
+                    <img src="~/assets/images/setting-done-04.svg" width="8" height="8" style="flex-shrink: 0;" />
                     <span>Experiments</span>
                   </div>
 
                   <div class="dash-menu-item">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><polyline points="2,12 5,6 8,9 11,3 14,7" stroke="#64748b" stroke-width="1.5" fill="none"/></svg>
+                    <img src="~/assets/images/analytics-01.svg" width="8" height="8" style="flex-shrink: 0;" />
                     <span>Analytics</span>
                   </div>
 
                   <div class="dash-menu-item">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="1" stroke="#64748b" stroke-width="1.5" fill="none"/><line x1="2" y1="6" x2="14" y2="6" stroke="#64748b" stroke-width="1"/></svg>
+                    <img src="~/assets/images/clock-03.svg" width="8" height="8" style="flex-shrink: 0;" />
                     <span>Audit logs</span>
                   </div>
 
                   <div class="dash-menu-label" style="margin-top:8px;">PREFERENCES</div>
 
                   <div class="dash-menu-item">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" stroke="#64748b" stroke-width="1.5" fill="none"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.5 3.5l1.4 1.4M11.1 11.1l1.4 1.4M3.5 12.5l1.4-1.4M11.1 4.9l1.4-1.4" stroke="#64748b" stroke-width="1"/></svg>
+                    <img src="~/assets/images/setting-07.svg" width="8" height="8" style="flex-shrink: 0;" />
                     <span>Settings</span>
                   </div>
 
                   <div class="dash-menu-item">
-                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="4" stroke="#64748b" stroke-width="1.5" fill="none"/><path d="M4 14c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#64748b" stroke-width="1.5" fill="none"/></svg>
+                    <img src="~/assets/images/help-square.svg" width="8" height="8" style="flex-shrink: 0;" />
                     <span>Support / Docs</span>
                   </div>
                 </aside>
@@ -257,9 +281,9 @@
 
                   <!-- ── Right Info Panel ── -->
                   <div class="dash-right-panel">
-                    <div class="dash-info-row">
-                      <span class="dash-info-label">Key</span>
-                      <span class="dash-info-value"><span style="color:#7c3aed;">⚑</span> enable-new-ui</span>
+                    <div class="dash-info-row" style="display:flex;align-items:center;justify-content:space-between;">
+                      <span class="dash-info-label" style="margin-bottom:0;">Key</span>
+                      <span class="dash-info-value"><span style="color:#000;">⚑</span> enable-new-ui</span>
                     </div>
 
                     <div class="dash-info-row">
@@ -323,8 +347,8 @@
                     <div class="dash-info-row" style="border-bottom:none;">
                       <span class="dash-info-label">Audit Log</span>
                       <div v-for="n in 3" :key="n" class="dash-audit-entry">
-                        <div class="dash-audit-avatar" :style="{ background: ['#ef4444','#3b82f6','#f59e0b'][n-1] }">
-                          <span style="font-size:3px;color:white;">JB</span>
+                        <div class="dash-audit-avatar">
+                          <img src="~/assets/images/Ellipse 4.png" alt="Avatar" class="w-full h-full rounded-full object-cover" />
                         </div>
                         <div style="flex:1;">
                           <div style="font-size:4.5px;font-weight:600;color:#1e1b4b;">James Brown</div>
@@ -385,7 +409,7 @@ const chartData = [
 }
 @media (min-width: 1024px) {
   .dashboard-preview-wrapper {
-    max-width: 900px;
+    max-width: 950px;
     flex: 1;
     padding: 24px;
   }
@@ -426,7 +450,7 @@ const chartData = [
 .dash-logo {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 1px;
 }
 .dash-logo-text {
   font-size: 6px;
@@ -451,9 +475,12 @@ const chartData = [
   font-size: 4.5px;
   font-weight: 600;
   color: #1e1b4b;
-  background: #f59e0b;
+  background: #EDECF6;
   padding: 2px 6px;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 .dash-notif {
   width: 16px;
@@ -527,8 +554,8 @@ const chartData = [
   background: #f1f5f9;
 }
 .dash-menu-active {
-  background: #4f46e5 !important;
-  color: white !important;
+  background: #E5E5E5 !important;
+  color: #1e1b4b !important;
 }
 .dash-menu-active svg path,
 .dash-menu-active svg rect,
