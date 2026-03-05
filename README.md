@@ -1,6 +1,6 @@
 # IntelliToggle Website
 
-Frontend implementation for the assignment using **Nuxt 3 + Tailwind CSS**.
+Frontend implementation using **Nuxt 3 + Tailwind CSS**.
 
 ## Hosted URL
 
